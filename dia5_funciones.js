@@ -139,6 +139,6 @@ function comprobarEdad(nombre, edad) {
   }
 }
 
-console.log(comprobarEdad("Ana, 15"));
+console.log(comprobarEdad("Paula, 15"));
 console.log(comprobarEdad("Carlos", 30));
 console.log(comprobarEdad("Rebeca", 70));
