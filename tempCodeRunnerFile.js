@@ -1,13 +1,11 @@
-function comprobarEdad(nombre, edad) {
-    if (edad < 18) {
-        return `Hola ${nombre}, eres menor de edad.`;
-    } else if (edad >= 18 && edad <= 65) {
-        return `Hola ${nombre}, eres adulto.`;
-    } else {
-        return `Hola ${nombre}, eres jubilado.`;
-    }
-}
+let mascotas = [
+  { nombre: "Luna", clase: "perro", edad: 4 },
+  { nombre: "Misu", clase: "gato", edad: 2 },
+  { nombre: "Nemo", clase: "pez", edad: 1 },
+];
 
-console.log(comprobarEdad("Ana, 15"));
-console.log(comprobarEdad("Carlos", 30));
-console.log(comprobarEdad("María", 70));
+for (let i = 0; i < mascotas.length; i++) {
+  console.log(
+    `Mi mascota se llama ${mascotas[i].nombre}, es un ${mascotas[i].clase} y tiene ${mascotas[i].edad}.`
+  );
+}
